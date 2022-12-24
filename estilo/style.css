@@ -73,7 +73,7 @@ section#img1 {
 }
 
   section.parallax::after {
-    z-index:8 ;
+    z-index:9 ;
     position: absolute;
     width: 100%;
     height: 100%;
