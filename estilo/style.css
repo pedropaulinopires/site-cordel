@@ -44,7 +44,7 @@ section {
   padding-top: 5vh;
   padding-bottom: 5vh;
   padding-left: 30px;
-  font-size: 3.5vw;
+  font-size: 4.5vw;
   font-family: var(--font-texto);
 }
 section.normal {
@@ -56,7 +56,6 @@ section.normal > p {
 section.imagem {
   background-color: rgba(0, 0, 0, 0.533);
   color: white;
-
 }
 section.imagem > p {
   background-color: rgba(0, 0, 0, 0.407);
@@ -68,14 +67,20 @@ section.imagem > p {
 }
 section#img1 {
   background-image: url("../imagens/background001.jpg");
-  background-position: center center;
+  background-position: 50% 50%;
   background-size: cover;
-    background-attachment: fixed;
-  z-index: 0;
+  background-attachment: fixed;
 }
+
+  section.parallax::after {
+    z-index:8 ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   }
 section#img2 {
   background-image: url("../imagens/background002.jpg");
-  background-position: center center;
+  background-position: 50% 50%;
   background-attachment: fixed;
   background-size: cover;
 }
